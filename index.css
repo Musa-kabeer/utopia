@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffead9;
+}
+
+#sections {
+  margin: 0 10rem;
+}
+
+header {
+  height: 100vh;
+}
+
+.logo {
+  color: black;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 33.6px;
+  letter-spacing: 0.48px;
+  word-wrap: break-word;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.nav_items {
+  display: flex;
+  gap: 20px;
+}
+
+.nav_items li a {
+  color: black;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22.4px;
+  letter-spacing: 0.32px;
+  word-wrap: break-word;
+}
+
+.btn {
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  width: 202px;
+  height: 54px;
+  background: #906487;
+  border: none;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  padding: 3.5rem 0;
+}
+
+.hero_text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero_image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero_text h2 {
+  font-size: 3rem;
+  line-height: 3.4rem;
+}
+
+.hero_text p {
+  font-size: 18px;
+}
+
+.launch_utopia {
+  display: flex;
+  gap: 15px;
+}
+
+.telegram,
+.discord {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: white;
+  padding: 5px 1rem;
+  width: 150px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.discord img,
+.telegram img {
+  width: 30.87px;
+  height: 23.9px;
+}
+
+.telegram p,
+.discord p {
+  font-size: 12px;
+}
+
+.activities {
+  position: relative;
+  width: 100%;
+  padding: 1rem 0;
+  height: 950px;
+}
+
+.vector {
+  position: absolute;
+  width: 100%;
+}
+
+.vector img {
+  width: 100%;
+}
+
+#position {
+  position: absolute;
+  width: 100%;
+  background: #ff8227;
+  top: 10rem;
+}
+
+.activity h1 {
+  width: 1000px;
+  font-size: 40px;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 56px;
+  color: #ffff;
+  padding-bottom: 20px;
+}
+
+.activity p {
+  margin: 0 auto;
+  font-size: 20px;
+  color: #ffff;
+  text-align: center;
+}
+
+.boxes {
+  padding: 3rem 9rem;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box {
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 14px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.box h3 {
+  color: #ff8227;
+  font-size: 32px;
+}
+
+.box_lists {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.box_lists li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.box_lists li span {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.vector-rotate {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  transform: rotate(180deg);
+}
+
+.main_features {
+  position: relative;
+  height: 580px;
+}
+
+.features {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: 20px;
+}
+
+.features h2 {
+  text-align: center;
+  font-size: 48px;
+  line-height: 67.2px;
+  letter-spacing: 0.96px;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.feature_box {
+  background-color: #ffd1ac;
+  border-radius: 7px;
+  box-shadow: 2px 3px 10px #a5a5a5e1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 30px 20px;
+}
+
+.feature_box > div {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.feature_box img {
+  width: 35px;
+  height: 35px;
+}
+
+.feature_box span {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.4px;
+}
+
+.feature_box ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature_box ul li {
+  font-size: 16px;
+}
+
+.frame {
+  position: absolute;
+  z-index: -10;
+  left: 0;
+  bottom: 0;
+  width: 350px;
+  height: 350px;
+}
+
+/* HOW DOES IT WORK */
+.community {
+  position: relative;
+  width: 100%;
+  padding: 1rem 0;
+  height: 800px;
+}
+
+.vector {
+  position: absolute;
+  width: 100%;
+}
+
+.vector img {
+  width: 100%;
+}
+
+.main_community {
+  position: absolute;
+  width: 100%;
+  background: #ff8227;
+  top: 10rem;
+  height: 510px;
+}
+
+.community_container {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  width: 70%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.community_text {
+  flex: 1;
+}
+
+.community_text h2 {
+  color: #fff;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 67.2px */
+  letter-spacing: 0.96px;
+}
+
+.community_text p {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 160% */
+  letter-spacing: 0.4px;
+}
+
+.community_boxes {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  height: 100%;
+}
+
+.box-container-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.3rem;
+}
+
+.box-container-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0.5rem;
+}
+
+.community_box {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  padding: 78px 44.885px 78.308px 44.115px;
+  border-radius: 10px;
+  background: #fff4eb;
+}
+
+.community_box img {
+  width: 20px;
+  height: 20px;
+}
+.community_box p {
+  color: #000;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.531px;
+}
+
+.utopia {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  /* height: 800px; */
+  padding: 2rem;
+}
+
+.utopia_container {
+  display: flex;
+  align-items: center;
+  gap: 112px;
+}
+
+.utopia_image {
+  width: 566.872px;
+  height: 434px;
+}
+
+.utopia_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.utopia_content h2 {
+  color: #000;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.72px;
+}
+
+.utopia_content p {
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.4px;
+}
+
+.utopia_frame {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 25%;
+  z-index: -2;
+}
+
+.users {
+  position: relative;
+  height: 800px;
+}
+
+.users_finder {
+  position: absolute;
+  margin-top: 9rem;
+  background-color: #ff8227;
+  width: 100%;
+}
+
+.users_finder_content {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  height: 500px;
+}
+
+.users_finder_content > div {
+  flex: 1;
+}
+
+.users_finder_content h2 {
+  color: #fff;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 1.12px;
+  width: 350px;
+}
+
+.users_finder_content p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.32px;
+  width: 350px;
+}
+
+.user_bot {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 1rem;
+}
+
+.user_bot_content {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 100%;
+  margin: 1rem 0;
+}
+
+.try_utopia {
+  position: relative;
+  height: 450px;
+}
+
+.try_utopia_layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: #906487;
+  width: 60%;
+  height: 300px;
+  padding: 2rem 3rem;
+  margin: 2rem auto;
+  gap: 30px;
+}
+
+.try_utopia_layout h3 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.96px;
+}
+
+.try_utopia_layout > p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.4px;
+}
+
+.footer {
+  position: relative;
+}
+
+.footer_content {
+  position: absolute;
+  margin-top: 9rem;
+  background-color: #ff8227;
+  width: 100%;
+  height: 400px;
+}
+
+.footer_grids {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 1.5rem 8rem;
+  color: #fff;
+}
+
+.footer_grids img {
+  width: 60px;
+  height: 60px;
+}
+
+.footer_grids ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_grids h4,
+.footer_grids li {
+  color: #fff;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+}
+
+.footer_grids h4 {
+  font-weight: 700;
+}
+
+.footer_grids li {
+  font-weight: 400;
+  margin: 0.7rem 0;
+}
+
+.footer_content p {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 180%;
+}
